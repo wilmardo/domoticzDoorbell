@@ -42,8 +42,7 @@ void setup() {
   WiFi.begin(SSID, PASS);
   
   //following line can me commented out dor DHCP mode. 
-  // WiFi.config(ip, dns, gateway, subnet) see https://www.arduino.cc/en/Reference/WiFiConfig
-  WiFi.config(IPAddress(192,168,1,16), IPAddress(192,168,1,1), IPAddress(255,255,255,0));
+  WiFi.config(IPAddress(192,168,1,16), IPAddress(192,168,1,1), IPAddress(255,255,255,0)); // WiFi.config(ip, dns, gateway, subnet) see https://www.arduino.cc/en/Reference/WiFiConfig
 
   // Wait for connection
   while (WiFi.status() != WL_CONNECTED) {
